@@ -1,7 +1,10 @@
 import csv
 import json
+import os
 
+from dotenv import load_dotenv
 from openpyxl import load_workbook
+import pytest
 
 
 def jsonHandling(filepath):
@@ -33,7 +36,7 @@ def csvWrite():
 
 
 # pip install openpyxl
-def test_excelhandling():
+def excelhandling():
         
         workbook = load_workbook("data\\sample_creds.xlsx")
         sheet = workbook["sheet1"]
@@ -42,3 +45,23 @@ def test_excelhandling():
             data.append(i)
 
         print(data)
+
+# set useremail=test123&&set pwText=passwordvalue&&pytest -m dataHandling -s
+# @pytest.mark.dataHandling
+def test_CLI():
+    username = os.getenv("useremail")
+    pw = os.getenv("pwText")
+    print(username)
+    print(pw)
+
+
+#pip install python-dotenv
+@pytest.mark.dataHandling
+def test_CLI():
+    load_dotenv(os.getenv("envFile"))
+    print(os.getenv("url"))
+    print(os.getenv("usename"))
+    print(os.getenv("pw"))
+
+
+
