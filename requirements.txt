@@ -3,6 +3,8 @@ playwright==1.60.0
 pytest-playwright
 pytest-xdist
 python-dotenv
+pytest-html
+allure-pytest
 
 
 
