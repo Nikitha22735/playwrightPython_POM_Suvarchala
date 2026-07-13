@@ -1,7 +1,9 @@
+import pytest
+
 from pages.homePage import home
 from pages.loginPage import login
 
-
+# @pytest.mark.smoke
 def test_positiveLogin(page, naviagetToBrowser):
     homePageObj = home(page)
     homePageObj.clickOnAccountsNdList()
