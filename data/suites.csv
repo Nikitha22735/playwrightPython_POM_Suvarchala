@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jul 13 10:24:59 UTC 2026","Mon Jul 13 10:24:59 UTC 2026","0","tests","test_dataHandling","","","","test_json",""
+"failed","Mon Jul 13 10:25:00 UTC 2026","Mon Jul 13 10:25:05 UTC 2026","5737","tests","test_home","","","","test_ValidateTheUIElementsOnHomeScreen[chromium]",""
+"passed","Mon Jul 13 10:24:59 UTC 2026","Mon Jul 13 10:24:59 UTC 2026","1","tests","test_dataHandling","","","","test_CLI",""
+"broken","Mon Jul 13 10:25:00 UTC 2026","Mon Jul 13 10:25:30 UTC 2026","30005","tests","test_login","","","","test_positiveLogin[chromium]",""
+"broken","Mon Jul 13 10:25:00 UTC 2026","Mon Jul 13 10:25:30 UTC 2026","30722","tests","test_results","","","","test_validateSearchResults[chromium]",""
