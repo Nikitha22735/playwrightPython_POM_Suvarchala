@@ -6,11 +6,15 @@ on:
    push:
     branches: [main]
    workflow_dispatch:
+   schedule:
+     - cron: '30 22 * * *'   #minutes hour day mnth week
+   
 jobs:
   test:
     runs-on: ubuntu-latest
-      
-
+    env:
+    useremail: ${{vars.USEREMAIL}}
+    pwText: ${{secrets.PWTEXT}}
     steps:
       # 1️⃣ Checkout repository
       - name: Checkout Repository from my github
